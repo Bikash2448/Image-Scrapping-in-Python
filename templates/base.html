@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Default Title{% endblock %}</title>
+    <link rel="stylesheet" href="https://path/to/your/styles.css">
+    <style>
+        body{
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(228, 226, 226);
+        }
+    </style>
+</head>
+<body>
+    <!-- Common Header -->
+    <header>
+        Email : bikashcse12448@gmail.com
+        
+    </header>
+
+    <!-- Main content area, will be filled by child templates -->
+    <main>
+        {% block content %}
+        <!-- This will be overridden by child pages -->
+        {% endblock %}
+    </main>
+
+    <!-- Common Footer -->
+    <footer>
+        
+    </footer>
+
+    <!-- Optional JavaScript Files -->
+    <script src="https://path/to/your/scripts.js"></script>
+</body>
+</html>

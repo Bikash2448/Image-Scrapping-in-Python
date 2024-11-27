@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - Image Scraper{% endblock %}
+
+{% block content %}
+<h1>Welcome to the Image Scraper</h1>
+<form method="POST" action="/about">
+    <input style="padding: 4px 10px; border-radius: 4px; font-size: medium; " type="text" name="content" placeholder="Search Picture........">
+    <button style="padding: 3px 6px; font-size: medium;" type="submit">Submit</button>
+</form>
+{% endblock %}
